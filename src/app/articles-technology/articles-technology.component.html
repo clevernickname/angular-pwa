@@ -1,0 +1,22 @@
+<mat-card *ngFor="let article of Articles">
+  <mat-card-header>
+    <mat-card-title class="title">{{ article.title }}</mat-card-title>
+    <mat-card-subtitle>{{ article.source.name }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    class="img-article"
+    src="{{ article.urlToImage }}"
+    alt=""
+  />
+  <mat-card-content>
+    <p>
+      {{ article.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="action-buttons">
+    <a mat-button color="primary" href="{{ article.url }}">
+      <mat-icon>description</mat-icon> Full Article
+    </a>
+  </mat-card-actions>
+</mat-card>
