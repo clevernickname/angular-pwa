@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { NewsapiService } from '../services/newsapi.service';
 
 @Component({
@@ -7,14 +8,12 @@ import { NewsapiService } from '../services/newsapi.service';
   styleUrls: ['./articles-javascript.component.css']
 })
 export class ArticlesJavascriptComponent implements OnInit {
-  JSArticles: Array<any>;
+  JSarticles$: Observable<any>;
 
   constructor(private newsapi: NewsapiService) {}
 
   ngOnInit() {
-    // news articles
-    this.newsapi
-      .initArticlesJavaScript()
-      .subscribe(data => (this.JSArticles = data.articles));
+    // javascript news articles
+    this.JSarticles$ = this.newsapi.getArticlesJavaScript();
   }
 }

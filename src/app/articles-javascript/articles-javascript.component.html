@@ -1,4 +1,4 @@
-<mat-card *ngFor="let article of JSArticles">
+<mat-card *ngFor="let article of JSarticles$ | async">
   <mat-card-header>
     <mat-card-title class="title">{{ article.title }}</mat-card-title>
     <mat-card-subtitle>{{ article.source.name }}</mat-card-subtitle>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import { NewsapiService } from '../services/newsapi.service';
 
 @Component({
@@ -7,14 +8,12 @@ import { NewsapiService } from '../services/newsapi.service';
   styleUrls: ['./articles-technology.component.css']
 })
 export class ArticlesTechnologyComponent {
-  Articles: Array<any>;
+  articles$: Observable<any>;
 
   constructor(private newsapi: NewsapiService) {}
 
   ngOnInit() {
-    // news articles
-    this.newsapi
-      .initArticles()
-      .subscribe(data => (this.Articles = data.articles));
+    // technology news articles
+    this.articles$ = this.newsapi.getArticlesTechnology();
   }
 }
