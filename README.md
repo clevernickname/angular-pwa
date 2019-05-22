@@ -1,27 +1,42 @@
-# AngularPwa
+# Angular PWA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+> This repository is the final code for a tutorial on how to Build a Progressive Web App with Angular. Use the code here to help you as you go through the tutorial.
 
-## Development server
+- [Blog Article](https://john-green.net/web/build-a-progressive-web-app-with-angular/)
+- [Dev Community Article](https://dev.to/clevernickname/build-a-progressive-web-app-with-angular-47c0)
+- [Medium Article](https://medium.com/@johndashgreen/build-a-progressive-web-app-with-angular-bf7d66744020)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Screenshot software](http://john-green.net/wp-content/uploads/2019/05/001-1.png 'screenshot software')
 
-## Code scaffolding
+## Download
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [GitHub Repository](<[https://github.com/clevernickname/angular-pwa](https://github.com/clevernickname/angular-pwa)>)
 
-## Build
+# Angular PWA Overview
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Build a Progressive Web App with Angular
 
-## Running unit tests
+This repository contains the final version of the code for the tutorial that shows how to build an Angular application, walks through the steps to make it a Progressive Web Application (PWA) and then deploys it using Netlify to use the application on a mobile device.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Angular Application**
+The app uses the NewsAPI to let users view Technology and JavaScript news headlines.
 
-## Running end-to-end tests
+**Progressive Web Application**
+Uses the Angular CLI to make the Angular app a working PWA.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+**Deploy with Netlify**
+Uses the Netlify cloud hosting service to deploy the PWA from a git repository so it can be added to and used on a mobile device.
 
-## Further help
+# How to use this code
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Clone this repository to your local development environment: `git@github.com:clevernickname/angular-pwa.git`
+
+2. Change to the app directory: `cd angular-pwa/src/app/`
+
+3. Run npm install in the app directory: `npm i`
+
+4. Build the application in the app directory and set it to watch for changes: `ng build --prod`
+
+## Contributors
+
+- [John Green](<[https://github.com/clevernickname](https://github.com/clevernickname)>)
